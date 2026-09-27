@@ -7,33 +7,21 @@ export type Service = {
 
 export const services: Service[] = [
   {
-    label: "CAPABILITY // 01",
-    title: "Marketplace Growth",
-    description: "Complete cataloging, indexing, and execution across Amazon India, Flipkart, and Meesho.",
-    capabilities: ["Seller and Vendor Central operations", "Listing optimization and brand pages", "Daily orders, claims, and recovery"],
+    label: "01 / MARKETPLACES",
+    title: "Marketplace Sales Growth",
+    description: "We manage Amazon, Flipkart and Meesho accounts, improving the path from product discovery to orders.",
+    capabilities: ["Account, catalog and order management", "Listings, product content, SEO and keywords", "Marketplace ads, pricing and promotion support"],
   },
   {
-    label: "CAPABILITY // 02",
-    title: "D2C E-Commerce",
-    description: "Conversion-focused storefronts that make the product, proposition, and checkout work together.",
-    capabilities: ["Shopify storefront architecture", "Product page and checkout optimization", "Lifecycle and retention workflows"],
+    label: "02 / WEBSITE DEVELOPMENT",
+    title: "E-commerce Website Development",
+    description: "We build the right online store for your products, customers and business requirements.",
+    capabilities: ["Custom Shopify stores and storefront changes", "Custom-coded websites, workflows and integrations", "Mobile-first product, catalog and checkout experiences"],
   },
   {
-    label: "CAPABILITY // 03",
+    label: "03 / PAID ACQUISITION",
     title: "Performance Marketing",
-    description: "Media operations connected to inventory, contribution margins, and actual dispatch capacity.",
-    capabilities: ["Google Shopping and Meta campaigns", "Catalog and feed management", "Blended efficiency reporting"],
-  },
-  {
-    label: "CAPABILITY // 04",
-    title: "Creative & Content",
-    description: "Product storytelling that gives marketplace listings and storefronts a reason to convert.",
-    capabilities: ["A+ content and brand stores", "Product imagery and asset systems", "Campaign-ready creative direction"],
-  },
-  {
-    label: "CAPABILITY // 05",
-    title: "Commerce Operations",
-    description: "The operating layer that keeps catalogs, inventory, orders, and customer experience aligned.",
-    capabilities: ["Multi-channel inventory synchronization", "Dispatch and claims workflows", "Operational reporting and controls"],
+    description: "We manage paid campaigns across Meta, Google and marketplaces, with performance tied to the sales journey.",
+    capabilities: ["Meta Ads and Google Ads management", "Amazon, Flipkart and Meesho ads", "Campaign, traffic and conversion optimization"],
   },
 ];

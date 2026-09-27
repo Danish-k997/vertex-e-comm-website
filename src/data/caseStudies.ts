@@ -8,24 +8,24 @@ export type CaseStudy = {
 
 export const caseStudies: CaseStudy[] = [
   {
-    type: "CASE STUDY // TIER-2 MANUFACTURING",
-    title: "D2C Kitchenware & Home Goods Manufacturer",
-    challenge: "An offline distributor-led business with unused capacity outside seasonal demand and no marketplace foundation.",
-    solution: "A focused catalog launch, marketplace operations, a dedicated storefront, and connected acquisition work.",
+    type: "EXAMPLE // MANUFACTURER",
+    title: "Taking a Manufacturer's Products Online",
+    challenge: "A product business with an offline presence but no structured marketplace or direct website channel.",
+    solution: "Potential scope: organize the catalog, launch marketplace listings, build a website and connect paid ads.",
     channels: ["Amazon", "Flipkart", "Shopify", "Google Ads"],
   },
   {
-    type: "CASE STUDY // MULTI-SKU DISTRIBUTION",
-    title: "Pan-India Consumer Goods Distributor",
-    challenge: "A broad catalog and multiple stock locations without a unified way to govern online availability.",
-    solution: "Structured catalog operations, channel controls, and a shared operating view for inventory and dispatch.",
+    type: "EXAMPLE // DISTRIBUTOR",
+    title: "Managing a Distributor's Online Catalog",
+    challenge: "A wide product range that is difficult to keep accurate across marketplace listings and orders.",
+    solution: "Potential scope: improve catalog structure and manage marketplace accounts, advertising and order operations.",
     channels: ["Amazon", "Meesho", "Flipkart", "Operations"],
   },
   {
-    type: "CASE STUDY // D2C GROWTH",
-    title: "Consumer Wellness Brand",
-    challenge: "Paid traffic and a storefront were managed separately, obscuring the actual conversion journey.",
-    solution: "A connected store, product storytelling, campaign operations, and retention workflow foundation.",
+    type: "EXAMPLE // BRAND OWNER",
+    title: "Connecting a Brand's Store and Ads",
+    challenge: "A brand needs its website and paid campaigns to work together with its marketplace presence.",
+    solution: "Potential scope: build or improve a Shopify store and coordinate Meta, Google and marketplace ads.",
     channels: ["Shopify", "Meta", "Google", "Lifecycle"],
   },
 ];

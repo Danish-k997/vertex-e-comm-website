@@ -7,13 +7,13 @@ const focusAreas = [
     name: "Marketplaces",
     detail: "Amazon India · Flipkart · Meesho",
     description:
-      "Catalog, pricing, promotions, and day-to-day channel operations.",
+      "Amazon, Flipkart and Meesho account management, listings and orders.",
   },
   {
-    name: "D2C storefront",
-    detail: "Website · Conversion · Retention",
+    name: "E-commerce website",
+    detail: "Shopify · Custom-coded",
     description:
-      "Store experience, conversion improvements, and retention journeys.",
+      "Shopify or custom-coded stores designed around your products and customers.",
   },
   {
     name: "Paid media",
@@ -99,7 +99,7 @@ export default function CommerceDashboard() {
 
       <div className="rounded-lg border border-[#282a2d] bg-[#0c0e11] p-3 sm:p-4">
         <div className="mb-2 flex flex-wrap items-center justify-between gap-x-3 gap-y-1 font-mono text-[10px] sm:text-[11px]">
-          <span className="text-[#9aa0a8]">BLENDED COMMERCE SIGNAL</span>
+          <span className="text-[#9aa0a8]">ONLINE SALES JOURNEY</span>
           <span className="text-[#ff6a00]">ILLUSTRATIVE · NO LIVE DATA</span>
         </div>
         <svg

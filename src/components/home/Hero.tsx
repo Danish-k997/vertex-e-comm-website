@@ -3,7 +3,11 @@ import { CheckCircle2, PlayCircle } from "lucide-react";
 import Button from "@/components/ui/Button";
 import CommerceDashboard from "@/components/home/CommerceDashboard";
 
-const channels = ["Marketplaces", "D2C Website", "Paid Ads", "Operations"];
+const channels = [
+  "Amazon · Flipkart · Meesho",
+  "Shopify · Custom Website",
+  "Meta · Google · Marketplace Ads",
+];
 
 export default function Hero() {
   return (
@@ -22,8 +26,8 @@ export default function Hero() {
         className="ambient-light pointer-events-none absolute -left-32 top-8 size-[28rem] rounded-full bg-[#ff6a00]/[0.09] blur-3xl"
       />
 
-      <div className="relative mx-auto grid max-w-7xl gap-16 px-4 sm:px-6 lg:grid-cols-12 lg:items-center lg:gap-10">
-        <div className="flex flex-col gap-7 lg:col-span-7">
+      <div className="relative mx-auto grid max-w-7xl gap-10 px-4 sm:px-6 lg:grid-cols-12 lg:items-center lg:gap-10">
+        <div className="flex flex-col gap-5 md:gap-7 lg:col-span-7">
           <span
             data-hero-enter="1"
             className="hero-enter inline-flex w-fit items-center gap-2 rounded-full border border-[#282a2d] bg-[#1a1c1f] px-3 py-1.5 text-[11px] font-semibold tracking-[0.08em] text-[#c4b4ab]"
@@ -38,7 +42,7 @@ export default function Hero() {
           >
             <span className="text-[#ff6a00]">From Marketplaces to D2C.</span>
             <br />
-            One Team for Your Entire Sales Engine.
+            One Team Built to Grow Your Online Sales.
           </h1>
 
           <div
@@ -59,9 +63,9 @@ export default function Hero() {
             data-hero-enter="4"
             className="hero-enter max-w-xl text-lg leading-7 text-[#9aa0a8]"
           >
-            We manage marketplace operations, build and grow D2C storefronts,
-            run performance ads, and coordinate fulfillment — all with one team
-            accountable for the full picture.
+            We manage Amazon, Flipkart and Meesho, build Shopify or custom-coded
+            e-commerce websites, and run Meta, Google and marketplace ads to
+            support online sales growth.
           </p>
 
           <div
@@ -88,7 +92,7 @@ export default function Hero() {
               aria-hidden="true"
               className="size-4 text-[#ff6a00]"
             />
-            For Indian manufacturers, distributors and enterprise brands.
+            For Indian manufacturers, distributors and brand owners.
           </p>
         </div>
 

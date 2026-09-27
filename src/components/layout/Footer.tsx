@@ -44,8 +44,8 @@ export default function Footer() {
               </span>
             </Link>
             <p className="max-w-md text-sm leading-6 text-[#c4c7cb]">
-              One team to manage your online sales: Amazon, Flipkart and Meesho,
-              your e-commerce website, and ads.
+              One team to manage your online sales across Amazon, Flipkart and
+              Meesho, plus a Shopify or custom-coded website and paid ads.
             </p>
             <p className="text-xs text-[#9aa0a8]">
               For manufacturers, distributors, and brand owners.

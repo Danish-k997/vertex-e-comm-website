@@ -14,17 +14,17 @@ export default function CaseStudies() {
           data-reveal
         >
           <div className="max-w-2xl">
-            <p className="kicker">Verified framework</p>
+            <p className="kicker">Illustrative engagements</p>
             <h2 className="mt-4 font-display text-3xl font-bold tracking-tight md:text-5xl">
-              Real Work. Real Commerce.
+              The Work Behind Online Sales.
             </h2>
             <p className="mt-4 text-lg leading-7 text-[#9aa0a8]">
-              Confidential brand deep dives shaped around the operating problems
-              that need to be solved.
+              These examples show the type of work Vertex can support. They are
+              not attributed client stories or verified performance claims.
             </p>
           </div>
           <span className="font-mono text-[11px] text-[#9aa0a8]">
-            AUDITED ENGINE DEPLOYMENTS
+            EXAMPLE WORK SCOPES
           </span>
         </div>
 
@@ -36,7 +36,7 @@ export default function CaseStudies() {
                   {featured.type}
                 </span>
                 <span className="font-mono text-[10px] text-[#9aa0a8]">
-                  CONFIDENTIAL
+                  ILLUSTRATIVE EXAMPLE
                 </span>
               </div>
               <h3 className="font-display text-2xl font-bold text-[#f5f5f2] md:text-3xl">
@@ -53,7 +53,7 @@ export default function CaseStudies() {
                 </div>
                 <div>
                   <p className="font-mono text-[10px] font-semibold text-[#ff6a00]">
-                    THE VERTEX SOLUTION
+                    POSSIBLE WORK
                   </p>
                   <p className="mt-2 text-sm leading-6 text-[#9aa0a8]">
                     {featured.solution}
@@ -84,7 +84,7 @@ export default function CaseStudies() {
                     {study.type}
                   </span>
                   <span className="font-mono text-[10px] text-[#9aa0a8]">
-                    CONFIDENTIAL
+                    ILLUSTRATIVE EXAMPLE
                   </span>
                 </div>
                 <h3 className="font-display text-xl font-bold text-[#f5f5f2]">

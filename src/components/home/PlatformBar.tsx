@@ -29,7 +29,7 @@ export default function PlatformBar() {
             One team. Every essential commerce channel.
           </p>
           <p className="hidden font-mono text-[11px] text-[#9aa0a8] md:block">
-            API SYNCHRONIZATION // CERTIFIED ECOSYSTEM
+            MARKETPLACES · WEBSITES · PAID ADS
           </p>
         </div>
         <ul className="platform-list flex flex-wrap items-center gap-x-6 gap-y-3 sm:gap-x-8">

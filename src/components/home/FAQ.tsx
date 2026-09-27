@@ -2,28 +2,40 @@ import { Plus } from "lucide-react";
 
 const questions = [
   [
-    "Do you work with manufacturers and distributors who have no online experience?",
-    "Yes. Vertex is designed for businesses that already have products and physical supply-chain infrastructure but need disciplined digital execution.",
+    "Do you manage Amazon, Flipkart and Meesho?",
+    "Yes. We manage marketplace accounts, listings, catalogs, advertising and ongoing account work across these channels.",
   ],
   [
-    "Which marketplaces do you actively manage?",
-    "The operating model is built around Amazon India, Flipkart, Meesho, and suitable D2C and B2B channels.",
+    "Do you only manage accounts, or also work toward sales growth?",
+    "Account management is the execution. We also work on listings, SEO, ads and conversion to support online sales. Results depend on the product, pricing, stock, competition and other factors; we do not guarantee sales.",
   ],
   [
-    "Do you build D2C e-commerce websites?",
-    "We create mobile-oriented storefront foundations, product pages, conversion paths, and the systems needed to operate them.",
+    "Can you manage an existing marketplace account or help if sales are low?",
+    "Yes. We can review the account, catalog, listings, ads and current sales journey, then agree on a practical scope of work.",
   ],
   [
-    "How is your advertising approach different?",
-    "Media is considered in the context of product availability, merchandising, conversion, returns, and contribution margins.",
+    "Do you build Shopify e-commerce websites?",
+    "Yes. We build and customize Shopify stores, including product structure and mobile-first shopping experiences.",
   ],
   [
-    "Can you manage multiple channels at the same time?",
-    "Multi-channel synchronization is a core part of the Vertex operating model, so pricing, inventory, and customer experience stay aligned.",
+    "Do you build custom-coded e-commerce websites?",
+    "Yes. We can build custom-coded storefronts and functionality when the requirements call for it. Shopify and custom development suit different needs; we help scope the right approach.",
   ],
   [
-    "Do you offer customized scopes of work?",
-    "Every engagement is scoped around the business stage and the highest-leverage commerce problems uncovered during the audit.",
+    "Do you manage listings, catalogs and marketplace ads?",
+    "Yes. Listing and catalog optimization, product content, keyword work and marketplace advertising can be included in the agreed scope.",
+  ],
+  [
+    "Do you run Meta Ads and Google Ads?",
+    "Yes. We manage paid campaigns on Meta and Google, as well as advertising on marketplaces where included in the scope.",
+  ],
+  [
+    "Do you work with manufacturers, distributors and brand owners?",
+    "Yes. We work with product businesses at different stages, including businesses entering online sales and existing marketplace sellers.",
+  ],
+  [
+    "Can you manage marketplaces and a D2C website together?",
+    "Yes. Marketplace management, a Shopify or custom-coded website and paid ads can be managed together as one online sales plan.",
   ],
 ] as const;
 

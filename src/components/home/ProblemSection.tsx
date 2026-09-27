@@ -1,11 +1,31 @@
 import { EyeOff, PackageX, SearchCheck, Store, Workflow } from "lucide-react";
 
 const problems = [
-  [EyeOff, "Listed, but not discovered.", "Passive catalogs and zero keyword strategy leave good products buried in category demand."],
-  [PackageX, "Traffic, but low conversion.", "Expensive clicks land on ambiguous storefronts with weak product propositions."],
-  [SearchCheck, "Ads, but unclear performance.", "Campaigns optimize superficial activity rather than contribution margin and repeat value."],
-  [Store, "A website, but no sales system.", "A standalone storefront without lifecycle flows or high-intent conversion architecture."],
-  [Workflow, "Too many channels, too much chaos to manage.", "Disconnected vendors, stock-outs, and conflicting reports consume leadership time."],
+  [
+    EyeOff,
+    "Listed, but not found.",
+    "Missing keywords or incomplete product listings can make it harder for shoppers to find your products.",
+  ],
+  [
+    PackageX,
+    "People visit, but do not buy.",
+    "Product pages or checkout can leave questions unanswered or add friction to a purchase.",
+  ],
+  [
+    SearchCheck,
+    "Ads run, but sales are unclear.",
+    "Without comparing campaigns with traffic and orders, it is hard to see what is helping.",
+  ],
+  [
+    Store,
+    "A website, but few orders.",
+    "A website needs clear product pages and relevant traffic to support online sales.",
+  ],
+  [
+    Workflow,
+    "Many channels, no one to manage them.",
+    "Separate marketplace, website and ad work can leave catalogs, stock and orders out of sync.",
+  ],
 ] as const;
 
 export default function ProblemSection() {
@@ -18,7 +38,8 @@ export default function ProblemSection() {
             Having a Product Is Not the Same as Having an Online Sales System.
           </h2>
           <p className="mt-5 max-w-2xl text-lg leading-7 text-[#9aa0a8]">
-            Marketplace listings, store experience, media spending, assets, and fulfillment must speak the same language.
+            Marketplace listings, store experience, media spending, assets, and
+            fulfillment must speak the same language.
           </p>
         </div>
 
@@ -29,12 +50,24 @@ export default function ProblemSection() {
               className="grid gap-3 border-b border-[#282a2d] py-8 md:grid-cols-12 md:items-start md:gap-8"
             >
               <div className="flex items-center justify-between md:col-span-2">
-                <span className="font-mono text-sm text-[#ff6a00]">0{index + 1}</span>
-                <Icon aria-hidden="true" className="size-5 text-[#9aa0a8] md:hidden" />
+                <span className="font-mono text-sm text-[#ff6a00]">
+                  0{index + 1}
+                </span>
+                <Icon
+                  aria-hidden="true"
+                  className="size-5 text-[#9aa0a8] md:hidden"
+                />
               </div>
-              <h3 className="font-display text-xl font-semibold text-[#f5f5f2] md:col-span-4">{title}</h3>
-              <p className="text-sm leading-6 text-[#9aa0a8] md:col-span-5">{copy}</p>
-              <Icon aria-hidden="true" className="hidden size-5 text-[#9aa0a8] md:col-span-1 md:mt-1 md:block" />
+              <h3 className="font-display text-xl font-semibold text-[#f5f5f2] md:col-span-4">
+                {title}
+              </h3>
+              <p className="text-sm leading-6 text-[#9aa0a8] md:col-span-5">
+                {copy}
+              </p>
+              <Icon
+                aria-hidden="true"
+                className="hidden size-5 text-[#9aa0a8] md:col-span-1 md:mt-1 md:block"
+              />
             </article>
           ))}
         </div>

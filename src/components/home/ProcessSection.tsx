@@ -1,28 +1,28 @@
 const steps = [
   [
     "Understand",
-    "WEEK 1-2",
-    "Deep audit of product SKUs, packaging, pricing, gross margins, competitor gaps, and channel viability.",
+    "DISCOVER",
+    "Review your products, current online channels, listings and sales challenges.",
   ],
   [
     "Build",
-    "WEEK 2-4",
-    "Engineered marketplace storefronts, high-converting D2C architecture, and measurement foundations.",
+    "FOUNDATION",
+    "Build or improve marketplace listings, e-commerce websites and campaign setup.",
   ],
   [
     "Manage",
-    "CONTINUOUS",
-    "Day-to-day catalog management, inventory sync, dispatch checks, inquiries, and claims.",
+    "ONGOING",
+    "Manage marketplace accounts, catalogs, ads, orders and day-to-day operations.",
   ],
   [
     "Optimize",
-    "CONTINUOUS",
-    "Refine traffic, merchandising, conversion paths, and operational signals with a shared view.",
+    "ONGOING",
+    "Use performance data to improve listings, SEO, ads, website conversion and orders.",
   ],
   [
     "Scale",
     "WHEN READY",
-    "Expand channels and capacity only when the system can carry the next layer of demand.",
+    "Build on what is working and expand products or channels when the business is ready.",
   ],
 ] as const;
 
@@ -30,22 +30,22 @@ export default function ProcessSection() {
   return (
     <section
       id="how-we-work"
-      className="scroll-mt-24 bg-[#111317] py-16 md:py-32"
+      className="scroll-mt-24 bg-[#111317] py-14 md:py-32"
     >
       <div className="mx-auto max-w-7xl px-5 sm:px-6">
         <div className="max-w-2xl" data-reveal>
           <p className="kicker">Execution roadmap</p>
           <h2 className="mt-4 font-display text-3xl font-bold tracking-tight md:text-5xl">
-            From Setup to Scale.
+            From First Review to Growth.
           </h2>
           <p className="mt-5 text-lg leading-7 text-[#9aa0a8]">
-            A phased deployment structure for risk control, disciplined rollout,
-            and progressive revenue acceleration.
+            Understand the opportunity, build the sales channels, manage
+            execution, and improve with real performance data.
           </p>
         </div>
 
         <ol
-          className="process-steps relative mt-12 grid gap-8 md:mt-16 md:grid-cols-2 md:gap-x-8 md:gap-y-10 lg:grid-cols-6 lg:gap-y-12"
+          className="process-steps relative mt-10 grid gap-6 md:mt-16 md:grid-cols-2 md:gap-x-8 md:gap-y-10 lg:grid-cols-6 lg:gap-y-12"
           data-reveal="delay"
         >
           <span

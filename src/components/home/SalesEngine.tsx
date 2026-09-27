@@ -1,4 +1,5 @@
 import {
+  BadgeIndianRupee,
   BarChart3,
   Database,
   Megaphone,
@@ -12,13 +13,13 @@ import { Fragment } from "react";
 import Button from "@/components/ui/Button";
 
 const nodes = [
-  { Icon: Package, label: "PRODUCT" },
-  { Icon: Store, label: "MARKETPLACE" },
-  { Icon: ShoppingCart, label: "D2C STORE" },
-  { Icon: Megaphone, label: "PAID MEDIA" },
+  { Icon: Package, label: "PRODUCT + LISTINGS" },
+  { Icon: ShoppingCart, label: "MARKETPLACE" },
+  { Icon: Store, label: "WEBSITE" },
+  { Icon: Megaphone, label: "PAID ADS" },
   { Icon: WandSparkles, label: "CONVERSION" },
-  { Icon: ShoppingCart, label: "ORDERS" },
-  { Icon: Database, label: "DATA SYNC" },
+  { Icon: Database, label: "ORDERS + DATA" },
+  { Icon: BadgeIndianRupee, label: "SALES GROWTH" },
   { Icon: BarChart3, label: "OPTIMIZE" },
   { Icon: TrendingUp, label: "SCALE" },
 ] as const;
@@ -26,8 +27,8 @@ const nodes = [
 const stages = [
   { label: "INPUTS", group: "inputs", indices: [0, 1, 2, 3] },
   { label: "CORE", group: "core", indices: [4] },
-  { label: "OPERATIONS", group: "operations", indices: [5, 6] },
-  { label: "GROWTH", group: "growth", indices: [7, 8] },
+  { label: "OPERATIONS", group: "operations", indices: [5] },
+  { label: "GROWTH", group: "growth", indices: [6, 7, 8] },
 ] as const;
 
 export default function SalesEngine() {
@@ -38,13 +39,15 @@ export default function SalesEngine() {
     >
       <div className="relative z-10 mx-auto max-w-7xl px-5 sm:px-6">
         <div className="max-w-2xl" data-reveal>
-          <p className="kicker">The unified architecture</p>
+          <p className="kicker">From product to online sales</p>
           <h2 className="mt-4 font-display text-3xl font-bold tracking-tight md:text-5xl">
-            Your Entire E-Commerce Engine. Connected.
+            One Connected Path from Product to Order.
           </h2>
           <p className="mt-5 text-lg leading-7 text-[#9aa0a8]">
-            Vertex Ecomm operates the complete commerce pipeline instead of
-            leaving you to coordinate separate teams.
+            We connect marketplace listings, your e-commerce website and paid
+            ads, then manage the work that moves shoppers from discovery to
+            orders. Sales growth is the outcome; connected execution is how we
+            work toward it.
           </p>
         </div>
 
@@ -67,13 +70,13 @@ export default function SalesEngine() {
                   return (
                     <li
                       key={label}
-                      className="engine-node relative flex flex-col items-start gap-3 lg:items-center lg:text-center"
+                      className={`engine-node relative flex flex-col items-start gap-3 lg:items-center lg:text-center ${index === 6 ? "engine-node--outcome" : ""}`}
                       data-engine-group={group}
                       data-engine-node={index + 1}
                     >
                       <span
                         className={`relative z-1 inline-flex size-9 items-center justify-center rounded-lg border ${
-                          index === 4
+                          index === 4 || index === 6
                             ? "border-[#ff6a00] bg-[#ff6a00] text-[#571f00]"
                             : "border-[#333538] bg-[#1a1c1f] text-[#f5f5f2]"
                         }`}
@@ -96,8 +99,8 @@ export default function SalesEngine() {
 
         <div className="mt-8 max-w-3xl md:mt-14" data-reveal>
           <p className="font-mono text-xs leading-6 text-[#9aa0a8]">
-            VERTEX SYSTEM — one operational view from product readiness to
-            dispatch, optimization, and scale.
+            PRODUCT → LISTINGS → TRAFFIC → CONVERSION → ORDERS → SALES GROWTH →
+            SCALE
           </p>
           <Button href="#audit-form" className="mt-4 min-h-11 w-full md:hidden">
             Get Free E-commerce Audit
