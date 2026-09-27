@@ -1,32 +1,22 @@
 import Link from "next/link";
-import { ArrowUpRight, Box, Globe, MessageCircle } from "lucide-react";
+import Image from "next/image";
+import { ArrowRight, MessageCircle } from "lucide-react";
 
-const columns = [
+const linkGroups = [
   {
     title: "Services",
     links: [
-      ["Architecture Design", "#services"],
-      ["Conversion Engineering", "#services"],
-      ["ERP & Omnichannel Sync", "#services"],
-      ["Supply-Chain Telemetry", "#services"],
+      ["Marketplace management", "#services"],
+      ["E-commerce website", "#services"],
+      ["Ad management", "#services"],
     ],
   },
   {
-    title: "Solutions",
+    title: "Explore",
     links: [
-      ["Industrial B2B Portal", "#solutions"],
-      ["Direct-To-Consumer Scale", "#solutions"],
-      ["Wholesale Distribution", "#solutions"],
-      ["Vertex Engine Core", "#engine"],
-    ],
-  },
-  {
-    title: "Company",
-    links: [
-      ["About Vertex", "#about"],
       ["How We Work", "#how-we-work"],
       ["Case Studies", "#case-studies"],
-      ["Audit Program", "#audit-form"],
+      ["Request an Audit", "#audit-form"],
     ],
   },
 ];
@@ -34,55 +24,105 @@ const columns = [
 export default function Footer() {
   return (
     <footer className="border-t border-[#222730] bg-[#0c0e11]">
-      <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6">
-        <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-5">
-          <div className="flex flex-col gap-5 lg:col-span-2">
+      <div className="mx-auto max-w-7xl px-4 py-10 sm:px-6 sm:py-12">
+        <div className="grid gap-9 border-b border-[#282a2d] pb-8 lg:grid-cols-12 lg:gap-12">
+          <div className="flex flex-col items-start gap-4 lg:col-span-6">
             <Link href="/" className="flex items-center gap-2">
-              <span className="inline-flex size-8 items-center justify-center rounded-lg bg-[#ff6a00] text-[#571f00]">
-                <Box aria-hidden="true" className="size-[18px]" />
-              </span>
-              <span className="font-display text-lg font-bold tracking-[0.08em] text-[#f5f5f2]">
-                VERTEX ECOMM
+              <Image
+                src="/brands/vertex.png"
+                alt="Vertex Ecomm"
+                width={48}
+                height={32}
+                sizes="48px"
+                className="h-8 w-12 shrink-0 object-contain"
+              />
+              <span
+                aria-hidden="true"
+                className="font-display text-sm font-bold uppercase tracking-[0.08em] text-[#f5f5f2]"
+              >
+                Vertex Ecomm
               </span>
             </Link>
-            <p className="max-w-sm text-sm leading-6 text-[#9aa0a8]">
-              Obsidian commerce infrastructure: a sales operating system for manufacturers, distributors,
-              and enterprise brands.
+            <p className="max-w-md text-sm leading-6 text-[#c4c7cb]">
+              One team to manage your online sales: Amazon, Flipkart and Meesho,
+              your e-commerce website, and ads.
             </p>
-            <div className="flex gap-3">
-              <a aria-label="Brand visibility" href="#about" className="footer-social">
-                <Globe className="size-[18px]" />
+            <p className="text-xs text-[#9aa0a8]">
+              For manufacturers, distributors, and brand owners.
+            </p>
+            <div className="flex items-center gap-2">
+              <a
+                aria-label="Vertex Ecomm on Instagram"
+                href="https://www.instagram.com/vertexecomm"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="footer-social"
+              >
+                <svg
+                  aria-hidden="true"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="1.8"
+                  className="size-4.5"
+                >
+                  <rect x="3" y="3" width="18" height="18" rx="5" />
+                  <circle cx="12" cy="12" r="4" />
+                  <circle
+                    cx="17.5"
+                    cy="6.5"
+                    r=".8"
+                    fill="currentColor"
+                    stroke="none"
+                  />
+                </svg>
               </a>
-              <a aria-label="Growth strategy" href="#engine" className="footer-social">
-                <ArrowUpRight className="size-[18px]" />
-              </a>
-              <a aria-label="WhatsApp" href="#audit-form" className="footer-social">
-                <MessageCircle className="size-[18px]" />
+              <a
+                aria-label="Contact Vertex Ecomm on WhatsApp"
+                href="https://wa.me/919801285586"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="footer-social"
+              >
+                <MessageCircle aria-hidden="true" className="size-4.5" />
               </a>
             </div>
+            <Link
+              href="#audit-form"
+              className="inline-flex min-h-10 items-center gap-2 rounded-lg bg-[#ff6a00] px-4 text-sm font-semibold text-[#571f00] transition-colors hover:bg-[#ffb694] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#ffb694] focus-visible:ring-offset-2 focus-visible:ring-offset-[#0c0e11]"
+            >
+              Request a free audit{" "}
+              <ArrowRight aria-hidden="true" className="size-4" />
+            </Link>
           </div>
 
-          {columns.map((column) => (
-            <div key={column.title} className="flex flex-col gap-3">
-              <h2 className="data-label text-[11px] font-semibold text-[#9aa0a8]">{column.title.toUpperCase()}</h2>
-              {column.links.map(([label, href]) => (
+          {linkGroups.map((group) => (
+            <nav
+              key={group.title}
+              aria-label={group.title}
+              className="grid content-start gap-3 lg:col-span-3"
+            >
+              <h2 className="text-xs font-semibold text-[#f5f5f2]">
+                {group.title}
+              </h2>
+              {group.links.map(([label, href]) => (
                 <Link
                   key={label}
                   href={href}
-                  className="text-sm text-[#9aa0a8] transition-colors duration-500 ease-out hover:text-[#f5f5f2]"
+                  className="w-fit text-sm text-[#9aa0a8] transition-colors duration-200 hover:text-[#f5f5f2] focus-visible:text-[#f5f5f2] focus-visible:outline-none focus-visible:underline"
                 >
                   {label}
                 </Link>
               ))}
-            </div>
+            </nav>
           ))}
         </div>
 
-        <div className="mt-14 flex flex-col gap-4 border-t border-[#282a2d] pt-6 text-sm text-[#9aa0a8] md:flex-row md:items-center md:justify-between">
+        <div className="flex flex-col gap-2 pt-5 text-xs text-[#9aa0a8] sm:flex-row sm:items-center sm:justify-between">
           <p>© 2026 Vertex Ecomm. All rights reserved.</p>
-          <p className="data-label flex items-center gap-2 text-xs">
-            <span className="size-1.5 rounded-full bg-[#ff6a00]" /> SYSTEMS ONLINE
-          </p>
+          <p>Marketplace management · Websites · Ads</p>
         </div>
       </div>
     </footer>
