@@ -48,7 +48,10 @@ export default function SalesEngine() {
           </p>
         </div>
 
-        <div className="engine-flow relative mt-10 md:mt-16" data-reveal="delay">
+        <div
+          className="engine-flow relative mt-10 md:mt-16"
+          data-reveal="delay"
+        >
           <div
             aria-hidden="true"
             className="engine-connector pointer-events-none absolute bg-[#282a2d]"
