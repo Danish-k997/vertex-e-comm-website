@@ -74,11 +74,17 @@ export default function HeroChannelTerms() {
           id={`hero-channel-panel-${channel}`}
           className="hero-channel-popover"
           role="group"
-          aria-label={channel === "marketplaces" ? "Marketplace channels" : "D2C website options"}
+          aria-label={
+            channel === "marketplaces"
+              ? "Marketplace channels"
+              : "D2C website options"
+          }
           aria-hidden={!isOpen}
         >
           <span className="hero-channel-popover-label">
-            {channel === "marketplaces" ? "MARKETPLACE CHANNELS" : "WEBSITE OPTIONS"}
+            {channel === "marketplaces"
+              ? "MARKETPLACE CHANNELS"
+              : "WEBSITE OPTIONS"}
           </span>
           {channel === "marketplaces" ? (
             marketplaceItems.map((item) => (
@@ -91,7 +97,10 @@ export default function HeroChannelTerms() {
               >
                 <Image src={item.src} alt="" width={20} height={20} />
                 <span>{item.name}</span>
-                <span aria-hidden="true" className="hero-channel-option-indicator" />
+                <span
+                  aria-hidden="true"
+                  className="hero-channel-option-indicator"
+                />
               </Link>
             ))
           ) : (
@@ -109,7 +118,10 @@ export default function HeroChannelTerms() {
                   height={20}
                 />
                 <span>Shopify</span>
-                <span aria-hidden="true" className="hero-channel-option-indicator" />
+                <span
+                  aria-hidden="true"
+                  className="hero-channel-option-indicator"
+                />
               </Link>
               <Link
                 href="#services"
@@ -119,7 +131,10 @@ export default function HeroChannelTerms() {
               >
                 <Code2 aria-hidden="true" className="size-5 text-[#c4c7cb]" />
                 <span>Custom-Coded</span>
-                <span aria-hidden="true" className="hero-channel-option-indicator" />
+                <span
+                  aria-hidden="true"
+                  className="hero-channel-option-indicator"
+                />
               </Link>
             </>
           )}
