@@ -14,5 +14,22 @@ import Testimonials from "@/components/home/Testimonials";
 import WhyVertex from "@/components/home/WhyVertex";
 
 export default function Home() {
-  return <main><Hero /><PlatformBar /><ProblemSection /><SalesEngine /><ServicesSection /><SolutionsSection /><ProcessSection /><CaseStudies /><WhyVertex /><ComparisonSection /><MetricsSection /><Testimonials /><FAQ /><FinalCTA /></main>;
+  return (
+    <main id="main">
+      <Hero />
+      <PlatformBar />
+      <ProblemSection />
+      <SalesEngine />
+      <ServicesSection />
+      <SolutionsSection />
+      <ProcessSection />
+      <CaseStudies />
+      <WhyVertex />
+      <ComparisonSection />
+      <MetricsSection />
+      <Testimonials />
+      <FAQ />
+      <FinalCTA />
+    </main>
+  );
 }

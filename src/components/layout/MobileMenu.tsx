@@ -32,7 +32,7 @@ export default function MobileMenu({ items }: MobileMenuProps) {
         aria-expanded={isOpen}
         aria-controls={menuId}
         onClick={() => setIsOpen((value) => !value)}
-        className="inline-flex size-8 items-center justify-center rounded border border-[#222730] bg-[#1a1c1f] text-[#e2e2e6] transition-colors hover:border-[#a98a7d] hover:bg-[#282a2d] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#ffb694]"
+        className="inline-flex size-8 items-center justify-center rounded-lg border border-[#222730] bg-[#1a1c1f] text-[#f5f5f2] transition-colors duration-500 ease-out hover:border-[#a98a7d] hover:bg-[#282a2d] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#ffb694]"
       >
         <span className="sr-only">{isOpen ? "Close navigation" : "Open navigation"}</span>
         {isOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
@@ -50,7 +50,7 @@ export default function MobileMenu({ items }: MobileMenuProps) {
                 <Link
                   href={item.href}
                   onClick={() => setIsOpen(false)}
-                  className="block rounded px-3 py-3 text-sm text-[#e2bfb0] transition-colors hover:bg-[#1a1c1f] hover:text-[#e2e2e6] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#ffb694]"
+                  className="block rounded-lg px-3 py-3 text-sm text-[#9aa0a8] transition-colors duration-500 ease-out hover:bg-[#1a1c1f] hover:text-[#f5f5f2] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#ffb694]"
                 >
                   {item.label}
                 </Link>

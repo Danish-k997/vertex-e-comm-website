@@ -1,2 +1,113 @@
 import { caseStudies } from "@/data/caseStudies";
-export default function CaseStudies() { return <section id="case-studies" className="border-y border-[#282a2d] bg-[#0c0e11] py-20"><div className="mx-auto max-w-7xl px-4 sm:px-6"><div className="mb-14 flex flex-col gap-5 md:flex-row md:items-end md:justify-between"><div><p className="text-[11px] font-semibold tracking-[0.08em] text-[#ff6a00]">VERIFIED FRAMEWORK</p><h2 className="mt-2 font-display text-3xl font-bold md:text-5xl">Real Work. Real Commerce.</h2><p className="mt-3 text-[#c4c6cd]">Confidential brand deep dives shaped around the operating problems that need to be solved.</p></div><span className="w-fit rounded border border-[#282a2d] bg-[#1e2023] px-4 py-2 font-mono text-xs text-[#c4c6cd]">AUDITED ENGINE DEPLOYMENTS</span></div><div className="grid gap-8 lg:grid-cols-3">{caseStudies.map((study) => <article key={study.title} className="flex min-h-[27rem] flex-col justify-between rounded-xl border border-[#282a2d] bg-[#1e2023] p-8"><div><div className="mb-5 flex justify-between gap-3"><span className="rounded bg-[#333538] px-2.5 py-1 font-mono text-[10px] text-[#ff6a00]">{study.type}</span><span className="font-mono text-[10px] text-[#c4c6cd]">CONFIDENTIAL</span></div><h3 className="font-display text-xl font-bold">{study.title}</h3><div className="mt-5 space-y-4 text-sm leading-6"><div><p className="font-mono text-[10px] font-semibold text-[#c4c6cd]">CHALLENGE</p><p className="text-[#c4c6cd]">{study.challenge}</p></div><div><p className="font-mono text-[10px] font-semibold text-[#ff6a00]">THE VERTEX SOLUTION</p><p className="text-[#c4c6cd]">{study.solution}</p></div></div></div><div className="mt-6 flex flex-wrap gap-2 border-t border-[#333538] pt-4">{study.channels.map((channel) => <span key={channel} className="rounded bg-[#0c0e11] px-2 py-1 font-mono text-[11px] text-[#c4c6cd]">{channel}</span>)}</div></article>)}</div></div></section>; }
+
+export default function CaseStudies() {
+  const [featured, ...rest] = caseStudies;
+
+  return (
+    <section
+      id="case-studies"
+      className="scroll-mt-24 border-y border-[#282a2d] bg-[#080a0d] py-24 md:py-32"
+    >
+      <div className="mx-auto max-w-7xl px-4 sm:px-6">
+        <div
+          className="flex flex-col gap-5 md:flex-row md:items-end md:justify-between"
+          data-reveal
+        >
+          <div className="max-w-2xl">
+            <p className="kicker">Verified framework</p>
+            <h2 className="mt-4 font-display text-3xl font-bold tracking-tight md:text-5xl">
+              Real Work. Real Commerce.
+            </h2>
+            <p className="mt-4 text-lg leading-7 text-[#9aa0a8]">
+              Confidential brand deep dives shaped around the operating problems
+              that need to be solved.
+            </p>
+          </div>
+          <span className="font-mono text-[11px] text-[#9aa0a8]">
+            AUDITED ENGINE DEPLOYMENTS
+          </span>
+        </div>
+
+        <div className="mt-16 grid gap-12 lg:grid-cols-12" data-reveal="delay">
+          <article className="case-study flex flex-col justify-between border-t border-[#282a2d] pt-8 lg:col-span-7">
+            <div>
+              <div className="mb-5 flex flex-wrap items-center justify-between gap-3">
+                <span className="font-mono text-[10px] text-[#ff6a00]">
+                  {featured.type}
+                </span>
+                <span className="font-mono text-[10px] text-[#9aa0a8]">
+                  CONFIDENTIAL
+                </span>
+              </div>
+              <h3 className="font-display text-2xl font-bold text-[#f5f5f2] md:text-3xl">
+                {featured.title}
+              </h3>
+              <div className="mt-8 grid gap-8 sm:grid-cols-2">
+                <div>
+                  <p className="font-mono text-[10px] font-semibold text-[#9aa0a8]">
+                    CHALLENGE
+                  </p>
+                  <p className="mt-2 text-sm leading-6 text-[#9aa0a8]">
+                    {featured.challenge}
+                  </p>
+                </div>
+                <div>
+                  <p className="font-mono text-[10px] font-semibold text-[#ff6a00]">
+                    THE VERTEX SOLUTION
+                  </p>
+                  <p className="mt-2 text-sm leading-6 text-[#9aa0a8]">
+                    {featured.solution}
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="mt-8 flex flex-wrap gap-2">
+              {featured.channels.map((channel) => (
+                <span
+                  key={channel}
+                  className="font-mono text-[11px] text-[#9aa0a8]"
+                >
+                  {channel}
+                </span>
+              ))}
+            </div>
+          </article>
+
+          <div className="grid gap-10 lg:col-span-5">
+            {rest.map((study) => (
+              <article
+                key={study.title}
+                className="case-study border-t border-[#282a2d] pt-8"
+              >
+                <div className="mb-4 flex justify-between gap-3">
+                  <span className="font-mono text-[10px] text-[#ff6a00]">
+                    {study.type}
+                  </span>
+                  <span className="font-mono text-[10px] text-[#9aa0a8]">
+                    CONFIDENTIAL
+                  </span>
+                </div>
+                <h3 className="font-display text-xl font-bold text-[#f5f5f2]">
+                  {study.title}
+                </h3>
+                <p className="mt-3 text-sm leading-6 text-[#9aa0a8]">
+                  {study.solution}
+                </p>
+                <div className="mt-5 flex flex-wrap gap-2">
+                  {study.channels.map((channel) => (
+                    <span
+                      key={channel}
+                      className="font-mono text-[11px] text-[#9aa0a8]"
+                    >
+                      {channel}
+                    </span>
+                  ))}
+                </div>
+              </article>
+            ))}
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
