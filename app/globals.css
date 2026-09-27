@@ -108,6 +108,169 @@ body {
   transform: translateY(-1px);
 }
 
+.hero-channel-term {
+  position: relative;
+  display: inline-block;
+  white-space: nowrap;
+}
+
+.hero-channel-trigger {
+  position: relative;
+  display: inline-block;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  cursor: pointer;
+  transition:
+    color 180ms ease,
+    text-shadow 180ms ease,
+    transform 180ms ease;
+}
+
+.hero-channel-trigger::after {
+  position: absolute;
+  right: 0;
+  bottom: 0.02em;
+  left: 0;
+  height: 2px;
+  background: var(--accent);
+  content: "";
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 180ms ease;
+}
+
+.hero-channel-term:hover .hero-channel-trigger,
+.hero-channel-term[data-open="true"] .hero-channel-trigger,
+.hero-channel-trigger:focus-visible {
+  color: #ffd0ad;
+  text-shadow: 0 0 18px rgb(255 106 0 / 22%);
+  transform: translateY(-1.5px);
+}
+
+.hero-channel-term:hover .hero-channel-trigger::after,
+.hero-channel-term[data-open="true"] .hero-channel-trigger::after,
+.hero-channel-trigger:focus-visible::after {
+  transform: scaleX(1);
+}
+
+.hero-channel-trigger:focus-visible {
+  border-radius: 2px;
+  outline: 2px solid var(--accent-soft);
+  outline-offset: 4px;
+}
+
+.hero-channel-popover {
+  position: absolute;
+  z-index: 30;
+  top: calc(100% + 12px);
+  left: 0;
+  display: grid;
+  width: max-content;
+  min-width: 13rem;
+  max-width: min(16rem, calc(100vw - 2rem));
+  gap: 3px;
+  padding: 9px;
+  border: 1px solid rgb(255 106 0 / 22%);
+  border-radius: 10px;
+  background: rgb(17 19 23 / 98%);
+  box-shadow:
+    0 14px 38px rgb(0 0 0 / 46%),
+    0 0 18px rgb(255 106 0 / 7%);
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(5px) scale(0.98);
+  transform-origin: top left;
+  transition:
+    opacity 180ms ease,
+    transform 180ms ease,
+    visibility 180ms ease;
+  visibility: hidden;
+}
+
+.hero-channel-term[data-channel-term="d2c"] .hero-channel-popover {
+  transform-origin: top right;
+}
+
+.hero-channel-term[data-open="true"] .hero-channel-popover {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0) scale(1);
+  visibility: visible;
+}
+
+.hero-channel-popover-label {
+  padding: 5px 8px 7px;
+  color: var(--text-muted);
+  font-family: var(--font-jetbrains-mono), ui-monospace, monospace;
+  font-size: 9px;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.hero-channel-option {
+  display: flex;
+  min-height: 38px;
+  align-items: center;
+  gap: 9px;
+  padding: 6px 8px;
+  border-radius: 6px;
+  color: #c4c7cb;
+  font-family: var(--font-inter), Arial, sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1.25;
+  text-decoration: none;
+  transition:
+    background-color 160ms ease,
+    color 160ms ease,
+    transform 160ms ease;
+}
+
+.hero-channel-option img {
+  width: 20px;
+  height: 20px;
+  flex: 0 0 20px;
+  object-fit: contain;
+}
+
+.hero-channel-option:hover,
+.hero-channel-option:focus-visible {
+  background: #242629;
+  color: var(--text);
+  transform: translateX(2px) scale(1.01);
+}
+
+.hero-channel-option:focus-visible {
+  outline: 2px solid var(--accent-soft);
+  outline-offset: 1px;
+}
+
+.hero-channel-option-indicator {
+  width: 5px;
+  height: 5px;
+  flex: 0 0 5px;
+  margin-left: auto;
+  border-radius: 50%;
+  background: var(--accent);
+  opacity: 0;
+  transition: opacity 160ms ease;
+}
+
+.hero-channel-option:hover .hero-channel-option-indicator,
+.hero-channel-option:focus-visible .hero-channel-option-indicator {
+  opacity: 1;
+}
+
+@media (max-width: 639px) {
+  .hero-channel-term[data-channel-term="d2c"] .hero-channel-popover {
+    right: auto;
+    left: 0;
+  }
+}
+
 .hero-channel {
   transition:
     border-color 200ms ease,
@@ -765,6 +928,14 @@ summary::-webkit-details-marker {
   .signal-fill,
   .signal-highlight {
     animation: none;
+  }
+
+  .hero-channel-trigger,
+  .hero-channel-trigger::after,
+  .hero-channel-popover,
+  .hero-channel-option,
+  .hero-channel-option-indicator {
+    transition: none;
   }
 
   .signal-path {

@@ -2,6 +2,7 @@ import Link from "next/link";
 import { CheckCircle2, PlayCircle } from "lucide-react";
 import Button from "@/components/ui/Button";
 import CommerceDashboard from "@/components/home/CommerceDashboard";
+import HeroChannelTerms from "@/components/home/HeroChannelTerms";
 
 const channels = [
   "Amazon · Flipkart · Meesho",
@@ -38,9 +39,12 @@ export default function Hero() {
 
           <h1
             data-hero-enter="2"
+            aria-label="From Marketplaces to D2C. One Team Built to Grow Your Online Sales."
             className="hero-enter max-w-3xl font-display text-[2.35rem] font-bold leading-[1.12] tracking-tight text-[#f5f5f2] sm:text-5xl lg:text-[3.65rem]"
           >
-            <span className="text-[#ff6a00]">From Marketplaces to D2C.</span>
+            <span className="text-[#ff6a00]">
+              From <HeroChannelTerms />.
+            </span>
             <br />
             One Team Built to Grow Your Online Sales.
           </h1>

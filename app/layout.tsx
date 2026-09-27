@@ -23,7 +23,7 @@ const jetBrainsMono = JetBrains_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL("https://vertex-ecomm.com"),
   title: {
-    default: "Vertex Ecomm | Obsidian Commerce Infrastructure",
+    default: "Vertex Ecomm |E-Commerse growth patner",
     template: "%s | Vertex Ecomm",
   },
   description:
