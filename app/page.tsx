@@ -5,6 +5,7 @@ import FinalCTA from "@/components/home/FinalCTA";
 import Hero from "@/components/home/Hero";
 import MetricsSection from "@/components/home/MetricsSection";
 import PlatformBar from "@/components/home/PlatformBar";
+import PricingSection from "@/components/home/PricingSection";
 import ProblemSection from "@/components/home/ProblemSection";
 import ProcessSection from "@/components/home/ProcessSection";
 import SalesEngine from "@/components/home/SalesEngine";
@@ -22,6 +23,7 @@ export default function Home() {
       <SalesEngine />
       <ServicesSection />
       <SolutionsSection />
+      <PricingSection />
       <ProcessSection />
       <CaseStudies />
       <WhyVertex />

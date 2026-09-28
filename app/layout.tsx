@@ -40,7 +40,8 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Vertex Ecomm",
-    description: "Obsidian commerce infrastructure for teams that already have a product.",
+    description:
+      "Obsidian commerce infrastructure for teams that already have a product.",
   },
   icons: {
     icon: "/favicon.ico",
@@ -56,7 +57,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       <body className="min-h-full bg-[#080a0d] text-[#f5f5f2]">
         <a
           href="#main"
-          className="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-[60] focus:rounded-lg focus:bg-[#ff6a00] focus:px-4 focus:py-2 focus:text-sm focus:font-semibold focus:text-[#571f00]"
+          className="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-60 focus:rounded-lg focus:bg-[#ff6a00] focus:px-4 focus:py-2 focus:text-sm focus:font-semibold focus:text-[#571f00]"
         >
           Skip to content
         </a>
