@@ -37,7 +37,7 @@ const pricingPackages: PricingPackage[] = [
     id: "marketplace-management",
     label: "Organic growth",
     name: "ORGANIC GROWTH MANAGEMENT",
-    price: 3549,
+    price: 3999,
     description:
       "A focused growth plan for brands that want stronger marketplace visibility, better listings and steady organic momentum without overcomplicating operations.",
     cta: "Get Started →",
