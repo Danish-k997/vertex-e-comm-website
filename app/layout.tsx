@@ -21,7 +21,7 @@ const jetBrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://vertex-ecomm.com"),
+  metadataBase: new URL("https://vertex-ecomm.in"),
   title: {
     default: "Vertex Ecomm |E-Commerse growth patner",
     template: "%s | Vertex Ecomm",
@@ -30,12 +30,12 @@ export const metadata: Metadata = {
     "Vertex Ecomm is an e-commerce sales operating system for manufacturers, distributors and brands — marketplaces, D2C, media and operations in one connected engine.",
   applicationName: "Vertex Ecomm",
   openGraph: {
-    title: "Vertex Ecomm | Obsidian Commerce Infrastructure",
+    title: "Vertex Ecomm | Marketplaces management expect",
     description:
       "A high-end e-commerce sales operating system. Build, manage and scale online sales across marketplaces, D2C and paid advertising.",
     type: "website",
     locale: "en_US",
-    url: "https://vertex-ecomm.com",
+    url: "https://vertex-ecomm.in",
   },
   twitter: {
     card: "summary_large_image",
