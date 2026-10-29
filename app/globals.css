@@ -75,6 +75,31 @@ body {
   animation: hero-enter 560ms cubic-bezier(0.2, 0.75, 0.25, 1) both;
 }
 
+.blinkit-reveal {
+  animation: blinkit-in 680ms cubic-bezier(0.2, 0.75, 0.25, 1) both;
+}
+
+.blinkit-reveal-1 { animation-delay: 70ms; }
+.blinkit-reveal-2 { animation-delay: 150ms; }
+.blinkit-reveal-3 { animation-delay: 260ms; }
+.blinkit-reveal-4 { animation-delay: 370ms; }
+.blinkit-reveal-5 { animation-delay: 470ms; }
+.blinkit-reveal-6 { animation-delay: 570ms; }
+
+.blinkit-logo-enter {
+  animation: blinkit-logo-in 620ms cubic-bezier(0.2, 0.75, 0.25, 1) 120ms both;
+}
+
+.service-card {
+  transition: transform 240ms ease, border-color 240ms ease, box-shadow 240ms ease;
+}
+
+.service-card:hover {
+  transform: translateY(-3px);
+  border-color: #45484b;
+  box-shadow: 0 20px 48px -34px rgba(0, 0, 0, 0.8);
+}
+
 [data-hero-enter="1"] {
   animation-delay: 80ms;
 }
@@ -857,6 +882,16 @@ summary::-webkit-details-marker {
   }
 }
 
+@keyframes blinkit-in {
+  from { opacity: 0; transform: translateY(14px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes blinkit-logo-in {
+  from { opacity: 0; transform: translateY(8px) scale(0.96); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
+}
+
 @keyframes dashboard-enter {
   from {
     opacity: 0;
@@ -936,6 +971,15 @@ summary::-webkit-details-marker {
   .hero-channel-option,
   .hero-channel-option-indicator {
     transition: none;
+  }
+
+  .blinkit-reveal,
+  .blinkit-logo-enter {
+    animation: none;
+  }
+
+  .service-card:hover {
+    transform: none;
   }
 
   .signal-path {

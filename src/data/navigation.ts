@@ -4,11 +4,12 @@ export type NavigationItem = {
 };
 
 export const navigation: NavigationItem[] = [
-  { label: "Services", href: "#services" },
-  { label: "Pricing", href: "#pricing" },
-  { label: "Solutions", href: "#solutions" },
-  { label: "Engine", href: "#engine" },
-  { label: "How We Work", href: "#how-we-work" },
-  { label: "Case Studies", href: "#case-studies" },
-  { label: "About", href: "#about" },
+  { label: "Services", href: "/#services" },
+  { label: "Blinkit Onboarding", href: "/?service=blinkit#audit-form" },
+  { label: "Pricing", href: "/#pricing" },
+  { label: "Solutions", href: "/#solutions" },
+  { label: "Engine", href: "/#engine" },
+  { label: "How We Work", href: "/#how-we-work" },
+  { label: "Case Studies", href: "/#case-studies" },
+  { label: "About", href: "/#about" },
 ];

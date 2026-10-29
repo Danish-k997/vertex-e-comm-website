@@ -7,7 +7,7 @@ const questions = [
   ],
   [
     "Do you only manage accounts, or also work toward sales growth?",
-    "Account management is the execution. We also work on listings, SEO, ads and conversion to support online sales. Results depend on the product, pricing, stock, competition and other factors; we do not guarantee sales.",
+    "Account management is the execution. We also work on listings, SEO, ads and conversion to support online sales. Our team focuses on the work we can control: clear execution, regular optimisation and practical reporting. Performance is shaped by product, pricing, stock, competition and other market conditions.",
   ],
   [
     "Can you manage an existing marketplace account or help if sales are low?",

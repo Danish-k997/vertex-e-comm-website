@@ -35,7 +35,7 @@ export default function FinalCTA() {
                 aria-hidden="true"
                 className="size-4 text-[#ff6a00]"
               />
-              A practical review, with no sales guarantees
+              A practical review focused on clear next steps
             </li>
           </ul>
         </div>

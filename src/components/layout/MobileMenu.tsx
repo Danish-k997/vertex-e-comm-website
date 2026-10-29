@@ -49,6 +49,7 @@ export default function MobileMenu({ items }: MobileMenuProps) {
               <li key={item.href}>
                 <Link
                   href={item.href}
+                  data-track={item.label === "Blinkit Onboarding" ? "blinkit_cta" : undefined}
                   onClick={() => setIsOpen(false)}
                   className="block rounded-lg px-3 py-3 text-sm text-[#9aa0a8] transition-colors duration-500 ease-out hover:bg-[#1a1c1f] hover:text-[#f5f5f2] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#ffb694]"
                 >

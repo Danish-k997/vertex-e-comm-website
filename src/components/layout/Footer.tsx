@@ -6,17 +6,18 @@ const linkGroups = [
   {
     title: "Services",
     links: [
-      ["Marketplace management", "#services"],
-      ["E-commerce website", "#services"],
-      ["Ad management", "#services"],
+      ["Marketplace management", "/#services"],
+      ["E-commerce website", "/#services"],
+      ["Ad management", "/#services"],
+        ["Blinkit onboarding", "/?service=blinkit#audit-form"],
     ],
   },
   {
     title: "Explore",
     links: [
-      ["How We Work", "#how-we-work"],
-      ["Case Studies", "#case-studies"],
-      ["Request an Audit", "#audit-form"],
+      ["How We Work", "/#how-we-work"],
+      ["Case Studies", "/#case-studies"],
+      ["Request an Audit", "/#audit-form"],
     ],
   },
 ];
@@ -90,7 +91,7 @@ export default function Footer() {
               </a>
             </div>
             <Link
-              href="#audit-form"
+              href="/#audit-form"
               className="inline-flex min-h-10 items-center gap-2 rounded-lg bg-[#ff6a00] px-4 text-sm font-semibold text-[#571f00] transition-colors hover:bg-[#ffb694] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#ffb694] focus-visible:ring-offset-2 focus-visible:ring-offset-[#0c0e11]"
             >
               Request a free audit{" "}

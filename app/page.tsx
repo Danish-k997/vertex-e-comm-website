@@ -13,11 +13,13 @@ import ServicesSection from "@/components/home/ServicesSection";
 import SolutionsSection from "@/components/home/SolutionsSection";
 import Testimonials from "@/components/home/Testimonials";
 import WhyVertex from "@/components/home/WhyVertex";
+import BlinkitPromo from "@/components/home/BlinkitPromo";
 
 export default function Home() {
   return (
     <main id="main">
       <Hero />
+      <BlinkitPromo />
       <PlatformBar />
       <ProblemSection />
       <SalesEngine />

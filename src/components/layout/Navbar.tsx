@@ -42,6 +42,7 @@ export default function Navbar() {
             <Link
               key={item.href}
               href={item.href}
+              data-track={item.label === "Blinkit Onboarding" ? "blinkit_cta" : undefined}
               className="nav-link text-[13px] leading-5 text-[#9aa0a8] transition-colors duration-300 ease-out hover:text-[#f5f5f2] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#ffb694]"
             >
               {item.label}
@@ -51,7 +52,7 @@ export default function Navbar() {
 
         <div className="flex items-center gap-2 sm:gap-3">
           <Button
-            href="#audit-form"
+            href="/#audit-form"
             className="gap-1 px-3 py-2 sm:gap-2 sm:px-5"
           >
             <span className="hidden sm:inline">Get Free Audit</span>
